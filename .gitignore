@@ -11,3 +11,6 @@ Cargo.lock
 
 # don't commit account code to repository
 account-code.txt
+
+# ignore setup text file
+setup.txt
