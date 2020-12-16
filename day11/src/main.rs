@@ -194,8 +194,8 @@ fn count_occupied_seats(
     while counted.iter().fold(false, |acc, &b| acc || !b) {
         for ind in 0..8 {
             if !counted[ind] {
-                let mut ni: usize = usize::MAX;
-                let mut nj: usize = usize::MAX;
+                let ni: usize;
+                let nj: usize;
                 match ind {
                     0 => {
                         let ni64: i64 = i64::try_from(*i).unwrap() - diff;
